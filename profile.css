@@ -1,0 +1,48 @@
+.profile-img {border-radius: 50%;}
+
+body.Ryan {background-color: #224570;}
+
+.container {text-align: center;}
+
+body.Ryan h1 {text-align: center;color: white;}
+
+table{margin-bottom: 40px;margin-left: auto;margin-right: auto;border-collapse: collapse;width: 80%;height: 300px;}
+
+fieldset {width: 300px;margin: auto;}
+
+.darkred {color: darkred;}
+
+.lightblue {color: #C5D9F1;}
+
+.gold {color: gold;}
+
+.brown {color: brown;}
+
+.plum {color: plum;}
+
+.green {color: green;}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.login-box input {
+  width: 70%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border-radius: 50px;
+}
+
+.login-box:hover {
+  transform: scale(1.02);
+}
+
+
+
+

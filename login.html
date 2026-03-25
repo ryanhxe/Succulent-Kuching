@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Login</h1>
+  </div>
+
+  <fieldset class="login-box">
+    <legend>Enter your credentials:</legend>
+    <form action="welcome.html" method="post">
+    
+      <label for="login">Login: </label><br>
+      <input type="text" id="login" name="login" placeholder="Alphabetical characters only"
+            maxlength="10" 
+            pattern="[A-Za-z]{1,10}" 
+            required><br><br>
+
+      <label for="password">Password: </label><br>
+      <input type="password" id="password" name="password" placeholder="Alphabetical characters only" 
+            maxlength="25" 
+            pattern="[A-Za-z]{1,25}" 
+            required><br><br>
+
+      
+      <input type="submit" value="Login">
+    </form>
+  </fieldset>
+</body>
+
+</html>
+
