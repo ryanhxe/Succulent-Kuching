@@ -3,19 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <title>Profile Page</title>
-  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="styles/profile.css">
 </head>
 
-
 <body class="Ryan">
-    <div class="container">
-        <img  src = "Picture/Ryan.jpg" alt="Profile Picture" width="400" height="400" class="profile-img">
+  <header>
+    <a href="index.html">
+        <img src="images/Logo.png" width="200" height="200" alt="Site Logo" />
+    </a>
+    <nav>
+        <ul>  
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown"><a href="product.html">Products</a>
+              <ul class="dropdown-menu">
+                <li><a href="Product 1.html">Product 1</a></li>
+                <li><a href="Product 2.html">Product 2</a></li>
+                <li><a href="Product 3.html">Product 3</a></li>
+              </ul>
+            </li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+        </ul>
+    </nav>
+  
+    <div class="user-actions">
+      <a href="register.html">Register</a> 
+      <a href="login.html">Login</a>
+      <a href="order.html" class="cart">Purchase</a>
     </div>
-    <h1>Hoong Xiang En Ryan</h1>
-    <h1>Student ID: 105799853</h1>
-    <h1>Bachelor of Computer Science (Cybersecurity)</h1>
+  </header>
 
-      <table border="1">
+  <div class="container">
+      <img  src = "images/Ryan.jpg" alt="Profile Picture" width="400" height="400" class="profile-img">
+  </div>
+  <h1>Hoong Xiang En Ryan</h1>
+  <h1>Student ID: 105799853</h1>
+  <h1>Bachelor of Computer Science (Cybersecurity)</h1>
+
+  <table border="1">
     <tr>
       <td class="darkred">About you</td>
       <td class="darkred">I'm Ryan</td>
@@ -43,7 +68,38 @@
   </table>
   
   <div class="container">
-    <a href="mailto:105799853@students.swinburne.edu.my"> <img src="Picture/button.png" alt="Email Me" /></a>
+    <a href="mailto:105799853@students.swinburne.edu.my"> <img src="images/button.png" alt="Email Me" /></a>
   </div>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Group of four members</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:105799853@students.swinburne.edu.my">105799853@students.swinburne.edu.my</a></p>
+        <p>Phone: +60 123-456-789</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Swinburne. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
