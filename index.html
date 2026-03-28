@@ -8,14 +8,29 @@
 </head>
 
 <body>
-    <nav>
-     <a href="index.html">
+  <header>
+    <a href="index.html">
         <img src="images/Logo.png" width="200" height="200" alt="Site Logo" />
-     </a>
-    <ul>  
-        <li><a href="index.html">Home</a></li>
-        <li><a href="product.html">Products</a></li>
-        <li><a href="login.html">Login</a></li>
-    </ul>
+    </a>
+    <nav>
+        <ul>  
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown"><a href="product.html">Products</a>
+              <ul class="dropdown-menu">
+                <li><a href="Product 1.html">Product 1</a></li>
+                <li><a href="Product 2.html">Product 2</a></li>
+                <li><a href="Product 3.html">Product 3</a></li>
+              </ul>
+            </li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+        </ul>
     </nav>
-
+  
+    <div class="user-actions">
+      <a href="register.html">Register</a> 
+      <a href="login.html">Login</a>
+      <a href="order.html" class="cart">Purchase</a>
+    </div>
+    </header>
+</body>
