@@ -602,6 +602,32 @@ nav a:hover, nav span:hover {
   box-shadow: 0 2px 5px rgba(0, 200, 150, 0.2);
 }
 
+/*References*/
+body {
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+main {
+  padding: 2rem;
+}
+
+.reference-section {
+  margin-bottom: 2rem;
+}
+
+.reference-section h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #2c3e50;
+  padding-bottom: 0.5rem;
+}
+
+.reference-section ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
 
 
 
