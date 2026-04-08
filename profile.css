@@ -24,7 +24,7 @@
   margin-bottom: 0.5rem;
 }
 
-.profile-info p {
+.profile-info h2 {
   color: #c8e6c9;
   margin: 0.3rem 0;
 }
@@ -43,16 +43,16 @@
   border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
-.map-link {
-  color: #C5D9F1;              
+summary {
+  cursor: pointer;
+  color: #88a64d;
   font-weight: bold;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+summary:hover {
+  color: #556f1f;
 }
 
-.map-link:hover {
-  color: #88a64d;              /* green highlight on hover */
-  text-shadow: 0 0 6px rgba(136,166,77,0.7);
-}
+
 
 
 
@@ -75,17 +75,33 @@ fieldset {width: 300px;margin: auto;}
 
 /* Colors */
 
-.darkred {color: darkred;}
+.darkred {color: rgb(186, 50, 50);}
 
 .lightblue {color: #C5D9F1;}
 
 .gold {color: gold;}
 
-.brown {color: brown;}
+.brown {color: rgb(232, 117, 117);}
 
 .plum {color: plum;}
 
-.green {color: green;}
+.green {color: rgb(79, 220, 79);}
+
+.cyan {color: cyan;}
+
+.silver {color: silver;}
+
+td.silver summary {
+  color: silver;
+  cursor: pointer;
+}
+
+td.lightblue summary {
+  color: #C5D9F1; 
+  cursor: pointer;
+}
+
+
 
 /* Login Page */
 
@@ -137,7 +153,7 @@ fieldset {width: 300px;margin: auto;}
 }
 
 .login-box input[type="submit"] {
-  background-color: #609966;
+  background-color: #4caf50;
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -178,7 +194,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 10px;
-  background-color: #609966; 
+  background-color: #6a9f6f; 
 }
 
 
@@ -209,6 +225,7 @@ nav a:hover, nav span:hover {
 
 .nav-menu {
   margin-left: auto;
+  margin-right: 1px;
   font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 1px;
@@ -439,7 +456,7 @@ nav a:hover, nav span:hover {
 
 /* Footer */
 .site-footer {
-  background: #609966;
+  background: #6a9f6f;
   color: white;
   padding: 1.5rem 0;
   margin-top: auto;
@@ -514,7 +531,7 @@ nav a:hover, nav span:hover {
 
 .sidebar {
   width: 220px;
-  background: linear-gradient(135deg, #c0d19e, #99ba9c);
+  background: linear-gradient(135deg, #d0dcb8, #cdcdcd);
   padding: 20px;
   border-right: 1px solid #ddd;
   border-radius: 8px 0 0 8px;
@@ -581,7 +598,7 @@ nav a:hover, nav span:hover {
 }
 
 .product-card button {
-  background-color: #f3e3c7;
+  background-color: #4caf50;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -602,32 +619,168 @@ nav a:hover, nav span:hover {
   box-shadow: 0 2px 5px rgba(0, 200, 150, 0.2);
 }
 
-/*References*/
-body {
-  margin: 0;
-  padding: 0;
-  background: #f9f9f9;
-  color: #333;
-}
-main {
-  padding: 2rem;
+/*Acknowledgement*/
+.ack-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
-.reference-section {
-  margin-bottom: 2rem;
+
+.ack-left, .ack-right {
+  flex: 1;
 }
 
-.reference-section h2 {
-  color: #2c3e50;
-  border-bottom: 2px solid #2c3e50;
+
+.ack-title {
+  font-family: Arial, sans-serif;
+  color: #2f4f4f;
+  border-bottom: 2px solid #88a64d;
   padding-bottom: 0.5rem;
+  text-align: center;
 }
 
-.reference-section ul {
-  list-style-type: square;
-  padding-left: 1.5rem;
+.ack-source {
+  font-style: italic;
+  color: #555;
+  margin-top: 0.5rem;
 }
 
+.ack-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.ack-list li {
+  margin: 8px 0;
+  padding: 6px 10px;
+  background-color: #f9f9f9;
+  border-left: 4px solid #88a64d;
+  transition: background-color 0.3s ease;
+}
+
+.ack-list li:hover {
+  background-color: #eef6e9;
+}
+
+.ack-list a {
+  color: #006400;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.ack-list a:hover {
+  text-decoration: underline;
+  color: #004d00;
+}
+
+/*Enhancement page */
+.enh-title {
+  font-family: Arial, sans-serif;
+  color: #2f4f4f;
+  border-bottom: 2px solid #88a64d;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.enh-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.enh-list li {
+  margin: 12px 0;
+  padding: 10px 14px;
+  background-color: #f9f9f9;
+  border-left: 4px solid #88a64d;
+  font-family: Arial, sans-serif;
+}
+
+.enh-list li strong {
+  color: #2f4f4f;
+}
+
+.enh-list li a {
+  color: #006400;
+  text-decoration: none;
+}
+
+.enh-list li a:hover {
+  text-decoration: underline;
+  color: #004d00;
+}
+
+.enhh2 {
+  font-family: Arial, sans-serif;
+  font-size: small;
+  color: #2f4f4f;
+  border-bottom: 2px solid #88a64d;
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+/*Mobile and tablet display Ryan page*/
+@media only screen and (max-width: 320px) and (max-height: 620px){
+
+  body.Ryan {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  body.Ryan .nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  body.Ryan .profile-img {
+    max-width: 90%; 
+    height: auto;
+    border-radius: 50%;
+  }
+
+  body.Ryan .profile-info {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  body.Ryan .profile-table {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  body.Ryan .profile-table td {
+    display: block;
+    padding: 6px;
+  }
+
+
+  body.Ryan td.silver audio {
+    display: block;
+    margin-top: 8px;
+    max-width: 100%;
+  }
+
+
+  body.Ryan .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+    body.Ryan .site-footer {
+    margin-top: auto;
+    padding: 15px;    
+    position: relative;    
+    bottom: 0;
+    width: 100%;
+  }
+}
 
 
 
